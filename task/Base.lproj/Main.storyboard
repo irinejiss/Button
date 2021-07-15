@@ -28,18 +28,26 @@
                                     <accessibilityTraits key="traits" button="YES" image="YES"/>
                                     <bool key="isElement" value="YES"/>
                                 </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="VTW-lO-oMj"/>
+                                    <constraint firstAttribute="height" constant="180" id="r8Y-Hq-9b2"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pending" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5rg-y2-afD">
-                                <rect key="frame" x="61" y="350" width="288" height="55"/>
+                                <rect key="frame" x="127.00000000000001" y="350" width="160.33333333333337" height="55"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="46"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="erZ-s1-cVC">
-                                <rect key="frame" x="152" y="453" width="127" height="107"/>
+                                <rect key="frame" x="167" y="453" width="80" height="80"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES" image="YES"/>
                                 </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="UKy-XY-92R"/>
+                                    <constraint firstAttribute="width" constant="80" id="UZK-U6-bMh"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <inset key="contentEdgeInsets" minX="17" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <inset key="imageEdgeInsets" minX="126" minY="105" maxX="132" maxY="76"/>
@@ -52,24 +60,19 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5rg-y2-afD" secondAttribute="trailing" constant="65" id="4Yb-on-OYV"/>
+                            <constraint firstItem="5rg-y2-afD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3RQ-hg-o6T"/>
+                            <constraint firstItem="gg9-lG-e7n" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6SB-DA-q4k"/>
                             <constraint firstItem="erZ-s1-cVC" firstAttribute="top" secondItem="5rg-y2-afD" secondAttribute="bottom" constant="48" id="71y-5C-pKH"/>
+                            <constraint firstItem="erZ-s1-cVC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fcs-Xa-EnG"/>
                             <constraint firstItem="gg9-lG-e7n" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="G6j-fV-avG"/>
-                            <constraint firstItem="erZ-s1-cVC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="152" id="Gsc-nr-DFQ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gg9-lG-e7n" secondAttribute="trailing" constant="117" id="Qck-bl-JIT"/>
                             <constraint firstItem="erZ-s1-cVC" firstAttribute="top" secondItem="5rg-y2-afD" secondAttribute="bottom" constant="48" id="Vl5-D7-KZG"/>
-                            <constraint firstItem="gg9-lG-e7n" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="117" id="WAt-a5-Yx1"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="erZ-s1-cVC" secondAttribute="trailing" constant="135" id="fNu-0L-SGk"/>
                             <constraint firstItem="5rg-y2-afD" firstAttribute="top" secondItem="gg9-lG-e7n" secondAttribute="bottom" constant="50" id="ipd-JL-Svl"/>
-                            <constraint firstItem="gg9-lG-e7n" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lcF-le-jf4"/>
-                            <constraint firstItem="5rg-y2-afD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="61" id="nhM-2i-bNA"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="erZ-s1-cVC" secondAttribute="bottom" constant="176" id="rgI-KS-iKq"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="clickin" destination="erZ-s1-cVC" id="HMF-by-TWP"/>
+                        <outlet property="checkButton" destination="erZ-s1-cVC" id="YRQ-YA-hgH"/>
                         <outlet property="imagePic" destination="gg9-lG-e7n" id="9AT-Jo-m3W"/>
-                        <outlet property="label" destination="5rg-y2-afD" id="5fV-Jg-EAA"/>
+                        <outlet property="statusLabel" destination="5rg-y2-afD" id="gbN-gh-Zeq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
