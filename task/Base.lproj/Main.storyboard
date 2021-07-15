@@ -22,42 +22,49 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image" highlightedImage="Image" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gg9-lG-e7n">
-                                <rect key="frame" x="87" y="202" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" highlightedImage="Image" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gg9-lG-e7n">
+                                <rect key="frame" x="117" y="120" width="180" height="180"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES" image="YES"/>
                                     <bool key="isElement" value="YES"/>
                                 </accessibility>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="erZ-s1-cVC">
-                                <rect key="frame" x="125" y="455" width="165" height="78"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
-                                </accessibility>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="78" id="O36-hN-Uf2"/>
-                                    <constraint firstAttribute="width" secondItem="erZ-s1-cVC" secondAttribute="height" multiplier="55:26" id="P9I-FU-4t2"/>
-                                    <constraint firstAttribute="width" constant="165" id="uuS-ym-gyt"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <inset key="contentEdgeInsets" minX="17" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <inset key="imageEdgeInsets" minX="126" minY="105" maxX="132" maxY="76"/>
-                                <state key="normal" image="pending"/>
-                                <connections>
-                                    <action selector="click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1pe-jS-0Ts"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pending" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5rg-y2-afD">
-                                <rect key="frame" x="61" y="350" width="288" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pending" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5rg-y2-afD">
+                                <rect key="frame" x="61" y="350" width="288" height="55"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="46"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="erZ-s1-cVC">
+                                <rect key="frame" x="152" y="453" width="127" height="107"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <inset key="contentEdgeInsets" minX="17" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="126" minY="105" maxX="132" maxY="76"/>
+                                <state key="normal" backgroundImage="pending"/>
+                                <connections>
+                                    <action selector="click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1pe-jS-0Ts"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5rg-y2-afD" secondAttribute="trailing" constant="65" id="4Yb-on-OYV"/>
+                            <constraint firstItem="erZ-s1-cVC" firstAttribute="top" secondItem="5rg-y2-afD" secondAttribute="bottom" constant="48" id="71y-5C-pKH"/>
+                            <constraint firstItem="gg9-lG-e7n" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="G6j-fV-avG"/>
+                            <constraint firstItem="erZ-s1-cVC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="152" id="Gsc-nr-DFQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gg9-lG-e7n" secondAttribute="trailing" constant="117" id="Qck-bl-JIT"/>
+                            <constraint firstItem="erZ-s1-cVC" firstAttribute="top" secondItem="5rg-y2-afD" secondAttribute="bottom" constant="48" id="Vl5-D7-KZG"/>
+                            <constraint firstItem="gg9-lG-e7n" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="117" id="WAt-a5-Yx1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="erZ-s1-cVC" secondAttribute="trailing" constant="135" id="fNu-0L-SGk"/>
+                            <constraint firstItem="5rg-y2-afD" firstAttribute="top" secondItem="gg9-lG-e7n" secondAttribute="bottom" constant="50" id="ipd-JL-Svl"/>
+                            <constraint firstItem="gg9-lG-e7n" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lcF-le-jf4"/>
+                            <constraint firstItem="5rg-y2-afD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="61" id="nhM-2i-bNA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="erZ-s1-cVC" secondAttribute="bottom" constant="176" id="rgI-KS-iKq"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="clickin" destination="erZ-s1-cVC" id="HMF-by-TWP"/>
